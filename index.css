@@ -1,0 +1,737 @@
+/* body {
+    background-image: url('Pink Green Aesthetic Watercolor Blank Background Instagram Story.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* General header styles */
+header {
+    background-color: #fff; /* white background for the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+}
+/* .p-2 .mx-1{
+    color: #000;
+}
+.p-2 .mx-1 :hover{
+    color: #702D17;
+} */
+
+header .navbar-nav .nav-link, 
+header .navbar-toggler {
+    color: #000; /* Black text color for links */
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease-in-out;
+}
+
+header .navbar-nav .nav-link:hover, 
+header .navbar-toggler:hover {
+    color: #702D17; /* Hover color */
+}
+
+header .navbar-nav .nav-item.active .nav-link {
+    color: #702D17; /* Active link color */
+}
+
+header .search-bar input {
+    background-color:white;
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    /* transition: border 0.3s ease; */
+}
+
+header .search-bar input:focus {
+    border-color: #702D17; /* Focus border color */
+}
+.img-fluid{
+    margin-left: 25px;
+    width: 60px;
+}
+header .logo-name {
+    font-size: 15px;
+    font-weight: bold;
+    color:black;
+    margin-left: 10px;
+    text-transform: uppercase;
+    /* letter-spacing: 0.1em; */
+    text-decoration: none;
+}
+
+header .navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+header .search-bar select {
+    background-color: transparent;
+    border: none;
+    color: #333;
+}
+
+header .search-bar select option {
+    color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .logo-name {
+        font-size: 18px; /* Smaller logo text on small screens */
+    }
+
+    .navbar-nav {
+        display: none; /* Hide navigation links in small screens */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show hamburger menu on small screens */
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* Background Section */
+section {
+    background-image: url('Pink Green Aesthetic Watercolor Blank Background Instagram Story.jpg');
+    background-repeat: no-repeat; /* تأكد من عدم تكرار الصورة */
+    background-size: cover; /* تجعل الصورة تغطي الشاشة بالكامل */
+    background-position: center; /* تجعل الصورة تتوسط الشاشة */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+
+section h2 {
+    font-size: 4rem;
+    color:black; /* Green shade from logo (Fruit color) */
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+
+section p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+section .btn {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section .btn-primary {
+    background-color: #4CAF50; /* Green shade for buttons */
+    color: white;
+    border: none;
+}
+
+section .btn-primary:hover {
+    background-color: #702D17; /* Hover brown color */
+    color: white;
+}
+
+section .btn-dark {
+    background-color: #000; /* Default dark color */
+    color: white;
+    border: none;
+}
+
+section .btn-dark:hover {
+    background-color: #702D17; /* Hover brown color */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 3rem; /* Adjust title size for smaller screens */
+    }
+    section p {
+        font-size: 1.25rem; /* Adjust paragraph size for smaller screens */
+    }
+    section .btn {
+        font-size: 0.9rem; /* Adjust button font size for small screens */
+    }
+}
+
+/* Section Styling */
+section.py-5 {
+    background-color: #f8f9fa; /* لون خلفية ثابت */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Category Carousel Styling */
+.category-carousel {
+    display: flex;
+    justify-content: space-around; /* توزع العناصر بالتساوي */
+    flex-wrap: wrap;
+}
+
+.category-carousel .nav-link {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for category items */
+.category-carousel .nav-link:hover {
+    transform: scale(1.05); /* تأثير تكبير عند التمرير */
+}
+
+/* Styling for category images */
+.category-carousel img {
+    border-radius: 50%; /* الدائرة للصور */
+    border: 2px solid #ddd; /* تحديد للصور */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* ظل ناعم للصورة */
+}
+
+/* Category Title Styling */
+.category-title {
+    font-weight: bold; /* جعل النص عريض */
+    font-size: 1.25rem; /* حجم الخط */
+    color:black; /* لون النص البني الذي استخدمناه سابقاً */
+    margin-top: 10px; /* مسافة بين الصورة والنص */
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    letter-spacing: 1px; /* زيادة المسافة بين الحروف */
+    transition: color 0.3s ease-in-out; /* إضافة تأثير على اللون عند التمرير */
+}
+
+/* Hover effect for category title */
+.category-title:hover {
+    color: #702D17; /* تغيير اللون عند التمرير */
+}
+/* Section Header */
+.section-header .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Circle Styling */
+.circle {
+    width: 150px; /* عرض الدائرة */
+    height: 150px; /* ارتفاع الدائرة */
+    border-radius: 50%; /* لجعل العنصر دائري */
+    background-color: #f1f1f1; /* لون خلفية الدائرة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+  }
+  
+  /* Category Title Styling */
+  .category-title {
+    font-weight: bold; /* نص عريض */
+    font-size: 1rem; /* حجم الخط */
+    color: #702D17; /* اللون البني */
+    text-transform: uppercase; /* حروف كبيرة */
+    letter-spacing: 1px; /* مسافة بين الحروف */
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  /* Hover effect for category title */
+  .circle:hover .category-title {
+    color: #4CAF50; /* تغيير اللون عند التمرير */
+  }
+  
+  /* Responsive Design */
+  
+  /* For small screens (phones) */
+  @media (max-width: 576px) {
+    .circle {
+      width: 120px; /* عرض أصغر للدائرة */
+      height: 120px; /* ارتفاع أصغر للدائرة */
+    }
+  
+    .category-title {
+      font-size: 0.9rem; /* حجم خط أصغر */
+    }
+  }
+  
+  /* For medium screens (tablets) */
+  @media (max-width: 768px) {
+    .circle {
+      width: 130px; /* عرض متوسط للدائرة */
+      height: 130px; /* ارتفاع متوسط للدائرة */
+    }
+  
+    .category-title {
+      font-size: 1rem; /* حجم خط مناسب للأجهزة المتوسطة */
+    }
+  }
+  
+  /* For larger screens (laptops/desktops) */
+  @media (min-width: 769px) {
+    .circle {
+      width: 150px; /* عرض الدائرة */
+      height: 150px; /* ارتفاع الدائرة */
+    }
+  
+    .category-title {
+      font-size: 1.1rem; /* حجم خط أكبر للأجهزة الكبيرة */
+    }
+  }
+
+  /* General Banner Styling */
+
+.banner-ad {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease; /* Smooth transition for hover effect */
+  }
+  
+  .banner-ad img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%); /* Make the image black and white initially */
+    transition: all 0.5s ease; /* Smooth transition for the grayscale effect */
+  }
+  
+  .banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .content-wrapper {
+    max-width: 90%;
+  }
+  
+  .banner-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+  }
+  
+  .banner-ad p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .btn-link {
+    background-color: #4CAF50; /* Button color */
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-link:hover {
+    background-color: #702D17; /* Hover color */
+  }
+  
+  /* Hover effect to revert image colors */
+  .banner-ad:hover {
+    filter: grayscale(0); /* Remove grayscale when hovering */
+  }
+  
+  .banner-ad:hover .banner-title {
+    color: #702D17; /* Change text color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner-ad {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .banner-content {
+      padding: 15px;
+    }
+  
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .banner-ad p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner-ad {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .banner-content {
+      padding: 10px;
+    }
+  
+    .banner-title {
+      font-size: 1rem;
+    }
+  
+    .banner-ad p {
+      font-size: 0.8rem;
+    }
+  }
+  /* General Banner Styling */
+.banner-ad {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease; /* Smooth transition for hover effect */
+  }
+  
+  .banner-ad img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%); /* Make the image black and white initially */
+    transition: all 0.5s ease; /* Smooth transition for the grayscale effect */
+  }
+  
+  .banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .content-wrapper {
+    max-width: 90%;
+  }
+  
+  .banner-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+  }
+  
+  .banner-ad p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .btn-link {
+    background-color: #702D17; /* Button color */
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-link:hover {
+    background-color: #4CAF50; /* Hover color */
+  }
+  
+  /* Hover effect to revert image colors */
+  .banner-ad:hover {
+    filter: grayscale(0); /* Remove grayscale when hovering */
+  }
+  
+  .banner-ad:hover .banner-title {
+    color: #ff6600; /* Change text color on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner-ad {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .banner-content {
+      padding: 15px;
+    }
+  
+    .banner-title {
+      font-size: 1.2rem;
+    }
+  
+    .banner-ad p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner-ad {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .banner-content {
+      padding: 10px;
+    }
+  
+    .banner-title {
+      font-size: 1rem;
+    }
+  
+    .banner-ad p {
+      font-size: 0.8rem;
+    }
+  }
+  /* General Section Styling */
+section {
+    padding: 0;
+  }
+  
+  .bg-secondary {
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+  
+  .section-header {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .form-control {
+    border-radius: 0;
+  }
+  
+  .d-grid {
+    display: grid;
+    gap: 10px;
+  }
+  
+  button {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design for Form */
+  @media (max-width: 992px) {
+    .col-md-5 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .p-3 {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.3rem;
+    }
+  
+    .form-control {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+    }
+  
+    .bg-secondary {
+      padding: 60px 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title {
+      font-size: 1.1rem;
+    }
+  
+    .col-md-5 {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .bg-secondary {
+      padding: 40px 0;
+    }
+  }
+
+  /* Footer Styles */
+footer {
+    background-color: #702D17;
+    color: white;
+  }
+  
+  .footer-menu img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+  }
+  
+  .footer-menu h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .menu-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #4CAF50;
+  }
+  
+  .social-links a {
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  form input, form button {
+    height: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .footer-menu {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .footer-menu img {
+      max-width: 200px;
+    }
+  
+    .footer-menu h5 {
+      font-size: 1.1rem;
+    }
+  
+    .menu-list {
+      padding-left: 20px;
+    }
+  
+    .menu-item {
+      margin-bottom: 8px;
+    }
+  
+    .social-links {
+      justify-content: center;
+    }
+  
+    .footer-menu form {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-menu form input {
+      width: 100%;
+    }
+  
+    .footer-menu form button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-menu {
+      text-align: center;
+    }
+  
+    .social-links {
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .col-lg-3, .col-md-2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-menu img {
+      max-width: 180px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-menu h5 {
+      font-size: 1rem;
+    }
+  
+    .footer-menu p {
+      font-size: 0.9rem;
+    }
+  
+    .social-links a {
+      font-size: 14px;
+    }
+  }
+  
